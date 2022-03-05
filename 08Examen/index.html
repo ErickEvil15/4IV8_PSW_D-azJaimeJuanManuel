@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de automovil</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    
+    <div class="container-form">      
+        <div class="main-datos">
+            <div class="centr">
+                    <h2>Interes Compuesto</h2>
+                <p>Calcular el monto a pagar por un automovil</p>
+            </div>
+
+            <div class="dats">
+                <br>
+                <h3>Datos iniciales</h3>
+                <br>
+                <form method="post" name="ingresarDatos" id="ingresarDatos" onsubmit="return validar(this)">
+                    
+                    <section>
+                        <table >
+                            <tr>
+                                <td>
+                                    <div>
+                                        <input type="number" class="precio" name="precio" id="precio" min="100000.00" max="1000000.00" placeholder="Precio del automovil">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                        <input type="number" class="cuotaIn" name="cuotaIn" id="cuotaIn" min="10" max="100" placeholder="Porcentaje de cuota inicial">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div>
+                                    <select name="periodo" id="periodo">
+                                        <optgroup label="Cantidad de meses a pagar">
+                                            <option value="3">3</option>
+                                            <option v alue="6">6</option>
+                                            <option value="8">9</option>
+                                            <option value="12">12</option>
+                                            <option value="18">18</option>
+                                        </optgroup>
+                                    </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+
+                    <br>
+                    <br>
+                    <input type="submit" class="agregar" name="agregar" value="Agregar Datos">
+                    <input type="reset" class="borrar" name="borrar" value="Borar Datos">
+                </form>
+                <br>
+
+            </div>
+            <div class="dinamic">
+                
+                <table id="tablaAuto" >
+                    <thead>
+                        <tr>
+                            <th>Precio</th>
+                            <th>Cuota Inicial</th>
+                            <th>Periodo</th>
+                            <th>Interés</th>
+                            <th>Cuota</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <div id="contenedorTabla">
+                        </div>
+                    </tbody>
+                </table>
+                <br>
+                <a href="../index.html">Volver a la pagina principal</a>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <script src="js/validacion.js"></script>
+</body>
+</html>
