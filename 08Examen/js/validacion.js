@@ -50,7 +50,7 @@ function validar(ingresarDatos){
 
 }
 
-if(allValido=true){
+if(validar(ingresarDatos)==true){
 
 const form = document.getElementById('ingresarDatos');
 form.addEventListener("submit", function(event) {
