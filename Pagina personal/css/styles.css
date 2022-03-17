@@ -1,7 +1,67 @@
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
 .cntr{
-    padding-left: 3px;
+    padding-top: 2%;
+    padding-left: 5%;
     padding-right: 23px;
     float:center;
     width: 100%;
     background-color:rgb(154, 33, 235);
-    height: 400px;
+    height: 200px;
+}
+body{
+	font-family: arial, helvetica;
+}
+
+.menu{
+	list-style: none;
+	padding: 0;
+	background: #092327;
+	width: 100%;
+	max-width: 850px;
+	margin: auto;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	display: block;
+}
+
+.menu li{
+	display: inline-block;
+	text-align: center;
+}
+
+.menu li a:hover{
+	background: #ef8354;
+}
+
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+.title{
+
+    text-decoration: underline;
+    color: white;
+
+}
+
+.texto{color: white;}
+
+.top{
+    
+}
