@@ -5,107 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Problemas Java Script</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <!--Problema 1-->
-    <section>
+    <div class="p1" style="align-items: center;">
+        <section align="center">
+            <div class="p1">
+            <H1> Problema 1 </H1>
+            <h3>Ingresa la cantidad de dinero que desees invertir</h3>
+            <input placeholder="Ingresa el monto a invertir" type="number" class="ingreso" name="ingreso" id="ingreso" min="1000" max="1000000" onkeyup="this.value=Numeros(this.value)">
 
-        <H1> Problema 1 </H1>
-        <h2>Ingresa la cantidad de dinero que desees invertir</h2>
-        <input placeholder="Ingresa el monto a invertir" type="number" class="ingreso" name="ingreso" id="ingreso">
+            <h3>Ingresa la cantidad de meses que desees  </h3>
+            <input placeholder="Ingresa la cantidad de meses a invertir" type="number" class="meses" name="meses" id="meses" min="3" max="48" onkeyup="this.value=Numeros(this.value)">
+            <br><br>               
+            <p align="center"><button type="button" onclick="problema1()" onclick="validar()" >Ver ingresos</button></p>           
+            </div>
+        </section>
+    </div>
 
-        <H2>Ingresa la cantidad de meses que desees  </H2>
-        <input placeholder="Ingresa la cantidad de meses a invertir" type="number" class="meses" name="meses" id="meses">
-        <br><br>
-        <button type="button" onclick="problema1()">Ver ingresos</button>
-
-        <button type="button" class="remove"  onclic="">Remover</button>
-    </section>
 
     <!--Problema 2-->
-    <section>
+    <section align="center">
         <h1>Problema 2</h1>
-        <h2>Ingresa sueldo base</h2>
-        <input placeholder="Sueldo Base" type="number" class="sueldoB" name="sueldoB" id="sueldoB">
-        <h2>Ingresa el total de la primera venta</h2>
-        <input placeholder="Primera venta" type="number" class="vent1" name="vent1" id="vent1">
-        <h2>Ingresa el total de la segunda venta</h2>
-        <input placeholder="Segunda venta" type="number" class="vent2" name="vent2" id="vent2">
-        <h2>Ingresa el total de la tercera venta</h2>
-        <input placeholder="Tercera venta" type="number" class="vent3" name="vent3" id="vent3">
+        <h3>Ingresa sueldo base</h3>
+        <input placeholder="Sueldo Base" type="number" class="sueldoB" name="sueldoB" id="sueldoB" min="0" onkeyup="this.value=Numeros(this.value)">
+        <h3>Ingresa el total de la primera venta</h3>
+        <input placeholder="Primera venta" type="number" class="vent1" name="vent1" id="vent1" min="0" onkeyup="this.value=Numeros(this.value)">
+        <h3>Ingresa el total de la segunda venta</h3>
+        <input placeholder="Segunda venta" type="number" class="vent2" name="vent2" id="vent2" min="0" onkeyup="this.value=Numeros(this.value)">
+        <h3>Ingresa el total de la tercera venta</h3>
+        <input placeholder="Tercera venta" type="number" class="vent3" name="vent3" id="vent3" min="0" onkeyup="this.value=Numeros(this.value)">
 
         <br><br>
-        <button type="button" onclick="problema2()">Total de ganancias</button>
-        <pre class="salida" id="p2-salida" >Esperando Datos...</pre>
-        
+        <p align="center"><button type="button" onclick="problema2()">Total de ganancias</button></p>
+        <div class="resultados">
+            <pre align="center" class="salida" id="p2-salida" >Esperando Datos...</pre>
+        </div>
         
     </section>
 
     <!--Problema 3-->
-    <section>
+    <section align="center">
         <h1>Problema 3</h1>
-        <h2>Precio del articulo</h2>
-        <input placeholder="Precio del articulo" type="number" class="precio" name="precio" id="precio" >
+        <h3>Precio del articulo</h3>
+        <input placeholder="Precio del articulo" type="number" class="precio" name="precio" id="precio" min="0" onkeyup="this.value=Numeros(this.value)">
         
-        <button type="button" onclick="problema3()"> Calcular descuento</button>
-        <pre class="salida" id="p3-salida">Esperando datos...</pre>
-        
+        <p align="center"><button type="button" onclick="problema3()"> Calcular descuento</button></p>
+        <div class="resultados">
+            <pre align="center" class="salida" id="p3-salida">Esperando datos...</pre>
+        </div>
     </section>
 
     <!--Problema 4-->
-    <section>
+    <section align="center">
         <h1>Problema 4</h1>
-        <h2>Calificacion del primer parcial</h2>
-        <input placeholder="Calificacion del primer parcial " type="number" class="c1" name="c1" id="c1">
+        <h3>Calificacion del primer parcial</h3>
+        <input placeholder="Calificacion del primer parcial " type="number" class="c1" name="c1" id="c1" min="0" max="10" onkeyup="this.value=Numeros(this.value)">
         
-        <h2>Calificacion del segundo parcial</h2>
-        <input placeholder="Calificacion del segundo parcial " type="number" class="c2" name="c2" id="c2">
+        <h3>Calificacion del segundo parcial</h3>
+        <input placeholder="Calificacion del segundo parcial " type="number" class="c2" name="c2" id="c2" min="0" max="10" onkeyup="this.value=Numeros(this.value)">
 
-        <h2>Calificacion del tercer parcial</h2>
-        <input placeholder="Calificacion del tercer parcial " type="number" class="c3" name="c3" id="c3">
+        <h3>Calificacion del tercer parcial</h3>
+        <input placeholder="Calificacion del tercer parcial " type="number" class="c3" name="c3" id="c3" min="0" max="10" onkeyup="this.value=Numeros(this.value)">
 
-        <h2>Calificacion del examen FINAL</h2>
-        <input placeholder="Calificacion del examen FINAL " type="number" class="exa" name="exa" id="exa">
+        <h3>Calificacion del examen FINAL</h3>
+        <input placeholder="Calificacion del examen FINAL " type="number" class="exa" name="exa" id="exa" min="0" max="10" onkeyup="this.value=Numeros(this.value)">
 
-        <h2>Calificacion del trabajo FINAL</h2>
-        <input placeholder="Calificacion del trabajo FINAL " type="number" class="trbj" name="trbj" id="trbj">
+        <h3>Calificacion del trabajo FINAL</h3>
+        <input placeholder="Calificacion del trabajo FINAL " type="number" class="trbj" name="trbj" id="trbj" min="0" max="10" onkeyup="this.value=Numeros(this.value)">
         
-        <button type="button" onclick="problema4()"> Calcular calificacion</button>
-
-        <pre class="salida" id="p4-salida">Esperando Datos...</pre>
+        <p align="center"><button type="button" onclick="problema4()"> Calcular calificacion</button></p>
+        <div class="resultados">        
+            <pre align="center" class="salida" id="p4-salida">Esperando Datos...</pre>
+        </div>
 
     </section>
 
     <!--Problema 5-->
-    <section>
+    <section align="center">
         <h1>Problema 5</h1>
-        <h2>Ingresa el numero total de estudiantes</h2>
-        <input placeholder="Total de alumnos" type="number" class="tAlumnos" name="tAlumnos" id="tAlumnos">
+        <h3>Ingresa el numero total de estudiantes</h3>
+        <input placeholder="Total de alumnos" type="number" class="tAlumnos" name="tAlumnos" id="tAlumnos" min="0" onkeyup="this.value=Numeros(this.value)">
 
-        <h2>Ingresa el numero de estudiantes mujeres</h2>
-        <input placeholder="Total de estudiantes mujeres" type="number" class="aMujeres" name="aMujeres" id="aMujeres">
+        <h3>Ingresa el numero de estudiantes mujeres</h3>
+        <input placeholder="Total de estudiantes mujeres" type="number" class="aMujeres" name="aMujeres" min="0" id="aMujeres" onkeyup="this.value=Numeros(this.value)">
 
-        <h2>Ingresa el numero de estudiantes hombres</h2>
-        <input placeholder="Total de estudiantes hombres" type="number" class="aHombres" name="aHombres" id="aHombres">
+        <h3>Ingresa el numero de estudiantes hombres</h3>
+        <input placeholder="Total de estudiantes hombres" type="number" class="aHombres" name="aHombres" min="0" id="aHombres" onkeyup="this.value=Numeros(this.value)">
 
-        <button type="button" onclick="problema5()" >Calcular porcentaje de estudiantes</button>
-        <pre class="salida" id="p5-salida">Esperando Datos...</pre>
-
+        <p align="center"><button type="button" onclick="problema5()" align="center">Calcular porcentaje de estudiantes</button></p>
+        <div class="resultados">
+            <pre align="center" class="salida" id="p5-salida">Esperando Datos...</pre>
+        </div>
     </section>
 
     <!--Problema 6-->
-    <section>
+    <section align="center">
         <h1>Problema 6</h1>
-        <h2>Ingresa tu año de nacimiento</h2>
-        <input placeholder="Año de nacimiento" type="number" class='aNac' name="aNac" id="aNac">
+        <h3>Ingresa tu año de nacimiento</h3>
+        <input placeholder="Año de nacimiento" type="number" class='aNac' name="aNac" id="aNac" min="1920" max="2022" onkeyup="this.value=Numeros(this.value)">
 
-        <h2>Ingresa el año actual</h2>
-        <input placeholder="Año actual" type="number" class='act' name="act" id="act">
+        <h3>Ingresa el año actual</h3>
+        <input placeholder="Año actual" type="number" class='act' name="act" id="act" min="1920" max="2022" onkeyup="this.value=Numeros(this.value)">
 
-        <button type="button" onclick="problema6()">Calcular mi edad</button>
-        <pre class="salida" id="p6-salida">Esperando Datos...</pre>
-
+        <p align="center"><button type="button" onclick="problema6()">Calcular mi edad</button></p>
+        <div class="resultados">
+            <pre align="center" class="salida" id="p6-salida">Esperando Datos...</pre>
+        </div>
     </section>
 
     <script src="js/problemas.js"></script>
