@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="pp">
+            <form class="forms"  method="post" name="registro" action="RegistrarMaquina" onsubmit="return validarRegistro()">
+                <h1>Registro del reporte de la maquina</h1>
+                <label>Laboratorio:</label>
+                <br>
+                <select name="laboratorio" id="laboratorio">
+                    <option value="1">LBD</option>
+                    <option value="2">LDS</option>
+                    <option value="3">LNT</option>
+                    <option value="4">4.0</option>
+                </select>
+                <br>
+                <label>Configuracion: </label>
+                <br>
+                <select name="os" id="os">
+                    <option value="1">Windows 10</option>
+                    <option value="2">Windows 8</option>
+                    <option value="3">Windows 7</option>
+                </select>
+                <br>
+                <label>Problematica de la maquina</label>
+                <br>
+                <input type="text" name="problema" id="problema">
+                <br>
+                
+                <label>Fecha:</label>
+                <br>
+                <input type="date" name="fecha" id="fecha" onkeypress="return validarn(event)">
+                <br>
+                <label>Hora:</label>
+                <br>
+                <input type="time" name="hora" id="hora" onkeypress="return validarn(event)">
+                <br>
+                <input type="text" name="serial" id="serial" onkeypress="return validarn(event)" >
+                <br>
+                <label>Estado del reporte:</label>
+                <br>
+                <select name="estado" id="estado">
+                    <option value="1">Buen estado</option>
+                    <option value="2">Estado medio</option>
+                    <option value="3">Mal estado</option>
+                </select>
+                <br>
+                <label>Numero de empleado:</label>
+                <br>
+                <input type="number" name="nEmpleado" id="nEmpleado" onkeypress="return validarn(event)">
+                <br>
+                <br>
+                <label>Prioridad del reporte:</label>
+                <br>
+                <select name="prioridad" id="prioridad">
+                    <option value="1">Alta</option>
+                    <option value="2">Media</option>
+                    <option value="3">Baja</option>
+                </select>
+                <br>
+                <label>Grupo:</label>
+                <br>
+                <select name="grupo" id="grupo">
+                    <option value="1">4IV7</option>
+                    <option value="2">4IV8</option>
+                    <option value="3">4IV9</option>
+                    <option value="4">4IV10</option>
+                </select>
+                <br>
+                <label>Asignatura</label>
+                <br>
+                <select name="asignatura" id="asignatura">
+                    <option value="1">PSW</option>
+                    <option value="2">TPPC</option>
+                    <option value="3">BASE DE DATOS</option>
+                    <option value="4">LPTI</option>
+                </select>
+                <br>
+                <label>Nombre del Docente:</label>
+                <br>
+                <input type="text" name="docenteN" id="docenteN" onkeypress="return validarn(event)" >
+                <br>
+                <label>Appellido paterno del Docente:</label>
+                <br>
+                <input type="text" name="docenteAppat" id="docenteAppat" onkeypress="return validarn(event)" >
+                <br>
+                <label>Appellido materno del Docente:</label>
+                <br>
+                <input type="text" name="docenteApmat" id="docenteApmat" onkeypress="return validarn(event)" >
+                <br>
+                <input type="submit" value="Registrar" name="Registrar" class="button">
+                <input type="reset" name="Borrar" value="Borrar" id="Borrar" class="button"> 
+            
+            </form>
+            <br>
+            <a class="link" href="docente.html">Volver</a>
+            <br>
+            <br>
+        </div>
+        <script src="js/validacion.js" ></script>
+        
+    </body>
+</html>

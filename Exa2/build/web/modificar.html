@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="pp">
+        <form  class="forms" method="post" name="modificar" action="ModificarMaquina" onsubmit="return validarModRegistroDocente(this)">
+            <h1>MODIFICAR DATOS DOCENTE</h1>
+                <label>Numero de empleado:</label>
+                <br>
+                <input type="text" name="empleado" id="empleado" onkeypress="return validarn(event)" >
+                <br>
+                <label>Usuario nuevo:</label>
+                <br>
+                <input type="text" name="usuario" id="usuario" onkeypress="return validarl(event)" >
+                <br>
+                <label>Password nueva:</label>
+                <br>
+                <input type="text" name="password" id="password" onkeypress="return validarl(event)" >
+                <br>
+                <label>Nombre nuevo:</label>
+                <br>
+                <input type="text" name="nombre" id="nombre" onkeypress="return validarl(event)" >
+                <br>
+                <label>Apellido paterno nuevo:</label>
+                <br>
+                <input type="text" name="appat" id="appat" onkeypress="return validarl(event)" >
+                <br>
+                <label>Apellido materno nuevo:</label>
+                <br>
+                <input type="text" name="apmat" id="apmat" onkeypress="return validarl(event)" >
+                <br>
+                <label>Numero de empleado nuevo:</label>
+                <br>
+                <input type="text" name="empleado_nuevo" id="empleado_nuevo" onkeypress="return validarn(event)" >
+                <br>
+                <input type="submit" value="Registrar" name="Registrar" class="button">
+                <input type="reset" name="" value="Borrar" id="" class="button"> 
+        </form>
+        <br>
+        <a class="link" href="docente.html">Volver</a>
+        <br><br>
+        </div> 
+    </body>
+</html>
