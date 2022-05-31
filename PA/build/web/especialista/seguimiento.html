@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css ">
+</head>
+<body class="bg-dark text-light px-4 py-5 text-center">
+    <h1>Seguimiento del paciente</h1>
+
+    <input type="text" class="btn btn-light" placeholder="Buscar Paciente por Nombre"><button ><img src="../img/lupa.webp" width="35" height="35" alt=""></button>
+    <input type="text" class="btn btn-light" placeholder="Buscar Paciente por CURP"><button ><img src="../img/lupa.webp" width="35" height="35" alt=""></button>
+    <input type="text" class="btn btn-light" placeholder="Buscar Paciente por Fecha"><button ><img src="../img/lupa.webp" width="35" height="35" alt=""></button>
+    <br><br>
+    <section>
+        <table>
+            <tr>
+                <td width="400">
+                    <a href="estres.html" target="paciente"><button class="btn btn-danger">Estrés Postraumático</button></a>
+                </td>
+                <td width="400">
+                    <a href="ansiedad.html" target="paciente"><button class="btn btn-danger">Ansiedad Generalizada</button></a>
+                </td>
+                <td width="400">
+                    <a href="tdah.html" target="paciente"><button class="btn btn-danger">TDAH</button></a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" width="3000"  height="500">
+                    <iframe width="100%" height="100%" name="paciente" scrolling="auto" src="../especialista/estres.html" frameborder="0"></iframe>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <a href="especialista.html"> <button class="btn btn-success">Atrás</button></a>
+</body>
+</html>

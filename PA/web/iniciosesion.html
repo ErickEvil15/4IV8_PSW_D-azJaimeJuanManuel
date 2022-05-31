@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-secondary px-4 py-5 text-center">
+    <h2>Iniciar sesión</h2>
+    <form method="post" action="VerificarEspecialista">
+        <br>
+        <label>Usuario</label>
+        <br>
+        <input type="text" name="usuario" id="usuario" class="btn btn-outline-light btn-lg px-4">
+        <br>
+        <br>
+        <label>Contraseña</label>
+        <br>
+        <input type="password" name="password" id="password" class="btn btn-outline-light btn-lg px-4">
+        <br><br><br>
+        
+        <input class="btn btn-success btnsepar" type="submit" value="Entrar Terapeuta">
+        <button class="btn btn-success btnsepar">Entrar paciente</button>
+    </form>
+    <h1>Iniciar sesión con:</h1>
+    <a href=""><button class="btn btn-danger btnsepar">Iniciar sesión con Google</button></a>
+    <a href=""><button class="btn btn-danger btnsepar">Iniciar sesión con Facebook</button></a>
+    <br><br>
+    <a href="index.html"><button class="btn btn-danger btnsepar">Atrás</button></a>    
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Forms</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <h1 class="titulo">Consulta de Alumnos de Batiz</h1>
+            <br>
+            <button class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"> <a href="ConsultarAlumnos">Consultar Lista</a> </button>
+        </div>
+            <section>
+                <div class="bg-dark text-secondary px-4 py-5 text-center" >
+                    <br>
+                    <h4>Ingrese los datos requeridos de usuario para registrar</h4>
+                    <h5>Para ingresar la boleta, consulte alumnos y escriba el siguiente numero</h5>
+                    <form name="formulario" method="post" action="RegistrarAlumnos" onsubmit="return validar(this)">
+                        <label class="fs-5 mb-4">Nombre</label>
+                        <br>
+                        <input type="text" name="nombre" id="nombre"  class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <br><br>
+                        <label class="fs-5 mb-4">Apellido Paterno</label>
+                        <br>
+                        <input type="text" name="appat" id="appat"  class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <br><br>
+                        <label class="fs-5 mb-4">Apellido Materno</label>
+                        <br>
+                        <input type="text" name="apmat" id="apmat"  class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <br><br>
+                        <label class="fs-5 mb-4">Boleta</label>
+                        <br>
+                        <input type="text" name="boleta" id="boleta" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <br><br>
+                        <label class="fs-5 mb-4">Telefono</label>
+                        <br>
+                        <input type="text" name="telefono" id="telefono"  class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <br>
+                        <br>
+                        <input type="submit" value="Registrar Nuevo Alumno" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <br><br>
+                        <input type="reset" value="Borrar Datos" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <div class="bg-dark text-secondary px-4 py-5 text-center" >
+                    <form method="get" action="EliminarAlumno" name="elimina" onsubmit="return validar2(this)">
+                        <br>
+                        <h4>Ingrese la Boleta para dar de baja a un alumno</h4>
+                        <br>
+                        <input type="text" name="boletaelimina" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <br><br>
+                        <input type="submit" value="Dar de Baja" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                    </form>
+                    
+                </div>
+            </section>
+
+            <section>
+                <div class="bg-dark text-secondary px-4 py-5 text-center" >
+                    <br>
+                    <h4 >Para editar, introduzca la boleta del alumno y los nuevos datos</h4>
+                    <form name="actualizar" method="get" action="ActualizarAlumno" onsubmit="return validar3(this)">
+                        <br><br>
+                        <label class="fs-5 mb-4">Boleta</label>
+                        <br>
+                        <input type="text" name="boletaeditar" id="boleta" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <br><br>
+                        <label class="fs-5 mb-4">Nombre</label>
+                        <br>
+                        <input type="text" name="nombre" id="nombre"  class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <br><br>
+                        <label class="fs-5 mb-4">Apellido Paterno</label>
+                        <br>
+                        <input type="text" name="appat" id="appat" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" >
+                        <br><br>
+                        <label class="fs-5 mb-4">Apellido Materno</label>
+                        <br>
+                        <input type="text" name="apmat" id="apmat" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" >
+                        <br><br>
+                        <label class="fs-5 mb-4">Telefono</label>
+                        <br>
+                        <input type="text" name="telefono" id="telefono"  class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <br><br>
+                        <input type="submit" value="Editar Alumno" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <br><br><br>
+                        <input type="reset" value="Borrar Datos" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" >
+                    </form>
+                </div>
+            </section>
+        <script src="js/validacion.js" ></script>
+    </body>
+</html>

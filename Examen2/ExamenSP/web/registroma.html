@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style2.css"/>
+    </head>
+    <body>
+        <div class="registroma">
+        <form class="forms"  method="post" name="registro" action="RegistrarMaquina" onsubmit="return validarRegistro()"> 
+             <h1>REGISTRO MÁQUINA</h1>
+            <br>
+                <label>Laboratorio:</label>
+                <br>
+                <input type="text" name="laboratorio" onkeypress="return validarl(event)" onpaste="return false">
+                <br>
+                <label>Fecha:</label>
+                <br>
+                <input type="text" name="fecha" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                <label>Hora:</label>
+                <br>
+                <input type="text" name="hora" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                <label>Etiqueta:</label>
+                <br>
+                <input type="text" name="etiqueta" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                <label>Serial de la máquina:</label>
+                <br>
+                <input type="text" name="serial" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                <label>CPU:</label>
+                <br>
+                <input type="text" name="cpu" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                <label>Marca:</label>
+                <br>
+                <input type="text" name="marca" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                <label>Monitor:</label>
+                <br>
+                <input type="text" name="monitor" onkeypress="return validarn(event)" onpaste="return false">
+               
+                <br>
+                <label>Accesorios faltantes:</label>
+                <br>
+                <input type="text" name="accesoriosfal" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                <label>Alumno:</label>
+                <br>
+                <input type="text" name="alumno" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                <label>Boleta:</label>
+                <br>
+                <input type="text" name="boleta" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                <label>Grupo:</label>
+                <br>
+                <input type="text" name="grupo" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                <label>Asignatura:</label>
+                <br>
+                <input type="text" name="asignatura" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                <label>Docente:</label>
+                <br>
+                <input type="text" name="docente" onkeypress="return validarn(event)" onpaste="return false">
+                <br>
+                
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div style="text-align: center;">
+                                    <input type="submit" value="Registrar" name="enviar">
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="reset" value="Borrar">
+                                </div>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+           
+            </form>
+            <br>
+            <a class="link" href="registro.html">Volver</a>
+            <br>
+            <br>
+        </div>
+        <script src="js/validacion.js" ></script>
+        
+    </body>
+</html>

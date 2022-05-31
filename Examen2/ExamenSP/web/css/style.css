@@ -1,0 +1,130 @@
+h1{
+    color:white;    
+}
+
+
+.container1{
+    background-color: #5B1E37;    
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top:  50px;
+    padding-left: 60px;
+    width: 100%;
+    overflow: hidden;
+    
+   
+}
+
+.izquierda{
+    float: left;
+    width: 40%;
+   
+    
+}
+
+.derecha{
+    float:right;
+    width: 40%;
+   
+}
+
+.container2{
+    margin: 0 auto;   
+    background-color: #5B1E37;
+    width: 98%;   
+    margin-top: 20px;
+    overflow:hidden;
+    
+   
+   
+}
+
+.agregardatosdo{
+    border: 4px solid rgb(255, 255, 255);
+    margin-left: 20px;
+   
+    border-radius: 5px;
+    background-color: #952F57;
+    width: 35%;   
+    text-align: center;
+    border-radius: 30px;
+    display: inline-block;
+    
+}
+
+.registromaq{
+    border: 4px solid rgb(255, 255, 255);
+    margin-left: 20px;  
+    
+    border-radius: 5px;
+    background-color: #952F57;
+    width: 35%;   
+    text-align: center;
+    border-radius: 30px;
+}
+
+.gatito{
+    float: right;
+    padding-right: 15px; 
+    width: 25%;
+    margin-right: 45px;
+    margin-bottom: 25px;
+ 
+   
+}
+
+.modificarma{
+    border: 4px solid rgb(255, 255, 255);
+    margin-left: 20px;
+    
+    border-radius: 5px;
+    background-color: #952F57;
+    width: 35%;   
+    text-align: center;
+    border-radius: 30px;
+}
+
+.eliminarma{
+    border: 4px solid rgb(255, 255, 255);
+    margin-left: 20px; 
+    
+    border-radius: 5px;
+    background-color:#952F57;
+    width: 35%;   
+    text-align: center;
+    border-radius: 30px;
+    
+}
+
+.consultado{
+    border: 4px solid rgb(255, 255, 255);
+    margin-left: 20px; 
+    
+    border-radius: 5px;
+    background-color: #952F57;
+    width: 35%;   
+    text-align: center;
+    border-radius: 30px;
+    
+    
+}
+
+.saludo{
+    border: 4px solid rgb(255, 255, 255);
+    margin-right: 40px;
+    float: right;
+    padding-right: 15px; 
+    
+    border-radius: 5px;
+    background-color: #952F57;
+    width: 25%;
+    text-align: right;
+    border-radius: 30px;
+    display: inline-block;
+    
+    
+}
+
+.label {
+    color:white;    
+}
